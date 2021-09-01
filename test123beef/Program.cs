@@ -95,7 +95,7 @@ namespace Hello_World
             bool quit = false;
             bool end = false;
 
-            while (quit = false) {
+            while (quit == false) {
 
                 Console.WriteLine("Enter a String between 8 and 20, inclusive, or type 'Quit' to go back to the menu");
 
@@ -150,6 +150,8 @@ namespace Hello_World
                     end = true;
                 }
 
+                end = false;
+
                 while (end == false)
                 {
                     string temps = "";
@@ -187,6 +189,7 @@ namespace Hello_World
                                 break;
                             }
                         }
+                        end = true;
 
                         input = new string(charArr);
                         Console.WriteLine(input);
